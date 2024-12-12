@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5FFFA;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  height: 450px;
+  width: 550px;
+  padding: 30px;
+  margin-top: 8%;
+  margin-left: 32%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #F0F8FF;
+  box-sizing: border-box;
+  text-align: center;
+  border-color: #4682B4;
+  border-width: 4px;
+}
+
+h1 {
+  color: #4682B4;
+}
+
+.coin {
+  width: 100px;
+  height: 100px;
+  perspective: 1000px; 
+  margin: 0 auto;
+}
+
+.coin-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s;  /* Плавная анимация трансформации */
+}
+
+#flipButton {
+  background-color: #4682B4; 
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+#flipButton:hover {
+  background-color: #00008B; 
+}
+
+/* Параметры анимации */
+.flipping {
+  animation: flip 1s forwards;  
+}
+
+/* Ключевые кадры анимации переворота */
+@keyframes flip {
+  0% { transform: rotateY(0deg); }  /* Начальное состояние без поворота */
+  50% { transform: rotateY(180deg); }  /* Полупереворот через 50% времени */
+  100% { transform: rotateY(360deg); }  /* Завершение полного оборота */
+}
+
+/* Стили для блока статистики */
+.stats {
+  margin-top: 30px;
+}
