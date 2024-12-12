@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F0FFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #4169E1;
+}
+
+.container {
+  max-width: auto;
+  padding: 20px;
+  background-color: #F0FFFF;
+  text-align: center;
+}
+
+.table-container {
+  max-height: 550px; 
+  overflow-y: auto; 
+  max-width: 1200px; 
+  overflow-x: auto; 
+  margin-top: 20px;
+  position: relative;  /* позволяет сдвигать элемент относительно его обычного положения */
+  background-color: #CAFAFE;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;  /* Скрывает двойные границы между ячейками */
+}
+
+#generateButton {
+  background-color: #4169E1;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+#generateButton:hover {
+  background-color: #0000cd; 
+}
+
+td, th {
+  border: 1px solid black; 
+  padding: 10px;
+  text-align: center; 
+}
+
+th {
+  font-weight: bold;
+  background-color: #97CAEF; 
+  position: sticky; /* Фиксирует позицию заголовка при прокрутке */
+  top: 0;  /* Заголовок всегда остается вверху */ 
+  z-index: 2; /* Устанавливает приоритет отображения над другими элементами */
+}
+
+.sticky {
+  position: sticky;  /* Фиксирует первую колонку при прокрутке */
+  left: 0;  /* Закрепляет колонку слева */
+  background-color: #97CAEF; 
+  z-index: 1; /* Приоритеты отображения ниже, чем у заголовков */
+}
+
+.sticky-header {
+  top: 0; /* Для закрепления строки на верхней части */ 
+}

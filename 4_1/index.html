@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Динамическая таблица умножения</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Динамическая таблица умножения</h1>
+        <label for="size">Выберите размер таблицы:</label>
+        <select id="size">
+        	<option value="10">10 x 10</option>
+        	<option value="20">20 x 20</option>
+        	<option value="30">30 x 30</option>
+        	<option value="40">40 x 40</option>
+        	<option value="50">50 x 50</option>
+        	<option value="60">60 x 60</option>
+        	<option value="70">70 x 70</option>
+        	<option value="80">80 x 80</option>
+        	<option value="90">90 x 90</option>
+        	<option value="100">100 x 100</option>
+        </select>
+        <button id="generateButton">Сгенерировать таблицу</button>
+        <div id="message" class="message"></div>
+        <div class="table-container">
+            <table id="multiplicationTable"></table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
