@@ -1,6 +1,6 @@
 # Lab4_1
 
-[index.html](/index.html)
+[index.html](/4_1/index.html)
 
 [style.css](/style.css)
 
