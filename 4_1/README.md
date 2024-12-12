@@ -2,8 +2,8 @@
 
 [index.html](/4_1/index.html)
 
-[style.css](/style.css)
+[style.css](/4_1/style.css)
 
-[script.js](/script.js)
+[script.js](/4_1/script.js)
 
-[favicon](/favicon.ico)
+[favicon](/4_1/favicon.ico)
